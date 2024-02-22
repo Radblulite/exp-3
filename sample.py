@@ -22,9 +22,9 @@ class LinearRegression:
         return y_hat
 
 if __name__ == '__main__':
-    X = np.array ([173, 182, 165, 154, 170], ndmin=2)
+    X = np.array ([150, 178, 145, 154, 170], ndmin=2)
     X = X.reshape(5, 1)
-    y = np.array ([68, 79, 65, 57, 64])
+    y = np.array ([69, 75, 40, 57, 64])
     model = LinearRegression ()
     model.fit (X, y)
     y_pred = model.predict ([158])
